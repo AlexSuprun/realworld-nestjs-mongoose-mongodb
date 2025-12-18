@@ -1,6 +1,2 @@
-export interface Profile {
-  username: string;
-  bio: string;
-  image: string;
-  following: boolean;
-}
+// Re-export from profiles module for backward compatibility
+export { ProfileDto } from '../../profiles/dto/profile.dto';

@@ -94,7 +94,16 @@ npm run start:dev
 npm run start:prod
 ```
 
-The API will be available at `http://localhost:3000/api`
+The API will be available at `http://localhost:3333/api`
+
+## API Documentation
+
+This project includes Swagger/OpenAPI documentation. Once the server is running, access the interactive API documentation at:
+
+- **Swagger UI**: http://localhost:3333/docs
+- **OpenAPI JSON**: http://localhost:3333/docs-json
+
+The Swagger UI allows you to explore and test all API endpoints directly from your browser.
 
 ## Test
 
@@ -108,27 +117,3 @@ npm run test:e2e
 # test coverage
 npm run test:cov
 ```
-
-## API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/users` | Register a new user |
-| POST | `/api/users/login` | Login |
-| GET | `/api/user` | Get current user |
-| PUT | `/api/user` | Update user |
-| GET | `/api/profiles/:username` | Get profile |
-| POST | `/api/profiles/:username/follow` | Follow user |
-| DELETE | `/api/profiles/:username/follow` | Unfollow user |
-| GET | `/api/articles` | List articles |
-| GET | `/api/articles/feed` | Get feed |
-| GET | `/api/articles/:slug` | Get article |
-| POST | `/api/articles` | Create article |
-| PUT | `/api/articles/:slug` | Update article |
-| DELETE | `/api/articles/:slug` | Delete article |
-| POST | `/api/articles/:slug/favorite` | Favorite article |
-| DELETE | `/api/articles/:slug/favorite` | Unfavorite article |
-| GET | `/api/articles/:slug/comments` | Get comments |
-| POST | `/api/articles/:slug/comments` | Add comment |
-| DELETE | `/api/articles/:slug/comments/:id` | Delete comment |
-| GET | `/api/tags` | Get tags |

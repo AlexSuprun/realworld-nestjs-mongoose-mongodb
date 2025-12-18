@@ -1,5 +1,6 @@
 import { ProfileDto } from '../../profiles/dto';
-import { Comment } from '@prisma/client';
+import { CommentDocument } from '../../schemas/comment.schema';
+
 export interface CommentForCreateDto {
   body: string;
 }
@@ -13,11 +14,11 @@ export interface CommentDto {
 }
 
 export function castToCommentDto(
-  comment: Comment,
+  comment: CommentDocument,
   author: ProfileDto,
 ): CommentDto {
   return {
-    id: comment.id,
+    id: comment._id.toString(),
     createdAt: comment.createdAt,
     updatedAt: comment.updatedAt,
     body: comment.body,

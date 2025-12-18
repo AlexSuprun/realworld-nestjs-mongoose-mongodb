@@ -1,27 +1,23 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { User } from '@prisma/client';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { MongoServerError } from 'mongodb';
+import { User, UserDocument } from '../schemas/user.schema';
 import { UserForUpdate } from './dto';
 
 @Injectable()
 export class UserService {
-  constructor(private prisma: PrismaService) {}
+  constructor(@InjectModel(User.name) private userModel: Model<User>) {}
 
-  async updateUser(user: User, dto: UserForUpdate) {
+  async updateUser(user: UserDocument, dto: UserForUpdate) {
     try {
-      const userUpdated = await this.prisma.user.update({
-        where: {
-          email: user.email,
-        },
-        data: {
-          ...dto,
-        },
-      });
+      const userUpdated = await this.userModel
+        .findOneAndUpdate({ email: user.email }, { ...dto }, { new: true })
+        .exec();
       return userUpdated;
     } catch (error) {
-      if (error instanceof PrismaClientKnownRequestError) {
-        if (error.code === 'P2002')
+      if (error instanceof MongoServerError) {
+        if (error.code === 11000)
           throw new BadRequestException('email or username taken');
       }
     }

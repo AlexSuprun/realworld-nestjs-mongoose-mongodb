@@ -1,4 +1,4 @@
-import { User } from '@prisma/client';
+import { UserDocument } from '../../schemas/user.schema';
 
 export interface ProfileDto {
   username: string;
@@ -7,7 +7,7 @@ export interface ProfileDto {
   following: boolean;
 }
 
-export function castToProfile(user: User, isFollowing: boolean): ProfileDto {
+export function castToProfile(user: UserDocument, isFollowing: boolean): ProfileDto {
   return {
     username: user.username,
     bio: user.bio,

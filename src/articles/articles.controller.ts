@@ -11,7 +11,7 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { User } from '@prisma/client';
+import { UserDocument } from '../schemas/user.schema';
 import { AllowAny, GetUser } from '../common/decorator';
 import { JwtGuard } from '../common/guard';
 import { ArticlesService } from './articles.service';
@@ -24,7 +24,7 @@ export class ArticlesController {
   @UseGuards(JwtGuard)
   @AllowAny()
   async getAllArticles(
-    @GetUser() user: User,
+    @GetUser() user: UserDocument,
     //filter by tag
     @Query('tag') tag?: string,
     //filter by author
@@ -53,7 +53,7 @@ export class ArticlesController {
   @UseGuards(JwtGuard)
   @Get('feed')
   async getUserFeed(
-    @GetUser() user: User,
+    @GetUser() user: UserDocument,
     @Query('limit') limit = 10,
     @Query('offset') offset = 0,
   ) {
@@ -65,13 +65,13 @@ export class ArticlesController {
   }
 
   @Get(':slug')
-  async getArticle(@GetUser() user: User, @Param('slug') slug: string) {
+  async getArticle(@GetUser() user: UserDocument, @Param('slug') slug: string) {
     return { article: await this.articleService.findArticle(user, slug) };
   }
 
   @UseGuards(JwtGuard)
   @Post()
-  async createArticle(@GetUser() user: User, @Body('article') dto) {
+  async createArticle(@GetUser() user: UserDocument, @Body('article') dto) {
     return {
       article: await this.articleService.createArticle(user, dto),
     };
@@ -80,7 +80,7 @@ export class ArticlesController {
   @UseGuards(JwtGuard)
   @Put(':slug')
   async updateArticle(
-    @GetUser() user: User,
+    @GetUser() user: UserDocument,
     @Param('slug') slug: string,
     @Body() dto,
   ) {
@@ -99,7 +99,7 @@ export class ArticlesController {
   @UseGuards(JwtGuard)
   @Post(':slug/comments')
   async addCommentToArticle(
-    @GetUser() user: User,
+    @GetUser() user: UserDocument,
     @Param('slug') slug: string,
     @Body() dto,
   ) {
@@ -125,13 +125,13 @@ export class ArticlesController {
 
   @UseGuards(JwtGuard)
   @Post(':slug/favorite')
-  async favoriteArticle(@GetUser() user: User, @Param('slug') slug: string) {
+  async favoriteArticle(@GetUser() user: UserDocument, @Param('slug') slug: string) {
     return { article: await this.articleService.favouriteArticle(user, slug) };
   }
 
   @UseGuards(JwtGuard)
   @Delete(':slug/favorite')
-  async unfavoriteArticle(@GetUser() user: User, @Param('slug') slug: string) {
+  async unfavoriteArticle(@GetUser() user: UserDocument, @Param('slug') slug: string) {
     return {
       article: await this.articleService.unfavouriteArticle(user, slug),
     };

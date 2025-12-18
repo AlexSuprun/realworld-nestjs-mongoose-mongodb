@@ -4,17 +4,19 @@ import {
   NotFoundException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { MongoServerError } from 'mongodb';
+import { User } from '../schemas/user.schema';
 import { LoginDto, UserDto, UserForRegistration } from './dto';
 import * as argon from 'argon2';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 
 @Injectable()
 export class AuthService {
   constructor(
-    private prisma: PrismaService,
+    @InjectModel(User.name) private userModel: Model<User>,
     private config: ConfigService,
     private jwt: JwtService,
   ) {}
@@ -22,13 +24,11 @@ export class AuthService {
   async createUser(dto: UserForRegistration) {
     const password = await argon.hash(dto.password);
     try {
-      const user = await this.prisma.user.create({
-        data: {
-          ...dto,
-          password: password,
-        },
-      });
-      const token = await this.signToken(user.id, user.email);
+      const user = await new this.userModel({
+        ...dto,
+        password: password,
+      }).save();
+      const token = await this.signToken(user._id.toString(), user.email);
       const userToReturn: UserDto = {
         email: user.email,
         token: token,
@@ -39,23 +39,19 @@ export class AuthService {
 
       return userToReturn;
     } catch (e) {
-      if (e instanceof PrismaClientKnownRequestError) {
-        if (e.code === 'P2002') throw new BadRequestException('email is taken');
+      if (e instanceof MongoServerError) {
+        if (e.code === 11000) throw new BadRequestException('email is taken');
       }
     }
   }
 
   async verifyUser(dto: LoginDto) {
-    const user = await this.prisma.user.findUnique({
-      where: {
-        email: dto.email,
-      },
-    });
+    const user = await this.userModel.findOne({ email: dto.email }).exec();
     if (!user) throw new NotFoundException('user does not exist');
     const matches = await argon.verify(user.password, dto.password);
     if (!matches)
       throw new UnauthorizedException('password and email do not match');
-    const token = await this.signToken(user.id, user.email);
+    const token = await this.signToken(user._id.toString(), user.email);
     const userReturned: UserDto = {
       email: user.email,
       token: token,

@@ -1,4 +1,5 @@
-import { Article, User } from '@prisma/client';
+import { ArticleDocument } from '../../schemas/article.schema';
+import { UserDocument } from '../../schemas/user.schema';
 import { ProfileDto } from '../../profiles/dto';
 
 export interface ArticleForCreateDto {
@@ -28,8 +29,8 @@ export interface ArticleDto {
 }
 
 export function castToArticle(
-  article: Article,
-  user: User,
+  article: ArticleDocument,
+  user: UserDocument,
   tags: string[],
   author: ProfileDto,
 ): ArticleDto {
@@ -41,7 +42,10 @@ export function castToArticle(
     tagList: tags,
     createdAt: article.createdAt,
     updatedAt: article.updatedAt,
-    favorited: article.favouritedUserIds.includes(user?.id) || false,
+    favorited:
+      article.favouritedUserIds.some(
+        (id) => id.toString() === user?._id?.toString(),
+      ) || false,
     favoritesCount: article.favouritedUserIds.length,
     author: author,
   };

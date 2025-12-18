@@ -1,19 +1,17 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { Article } from '../schemas/article.schema';
 
 @Injectable()
 export class TagsService {
-  constructor(private prisma: PrismaService) {}
+  constructor(@InjectModel(Article.name) private articleModel: Model<Article>) {}
 
   async getTags() {
-    const tags = await this.prisma.article.findMany({
-      select: {
-        tagList: true,
-      },
-    });
-    const flatTags = tags
-      .map((tagList) => tagList.tagList)
-      .reduce((a, b) => a.concat(b));
+    const articles = await this.articleModel.find().select('tagList').exec();
+    const flatTags = articles
+      .map((article) => article.tagList)
+      .reduce((a, b) => a.concat(b), []);
     const returnTags: string[] = [];
     flatTags.forEach((tag) => {
       if (!(returnTags?.includes(tag) || false)) returnTags.push(tag);

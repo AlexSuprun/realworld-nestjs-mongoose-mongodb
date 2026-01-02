@@ -1,0 +1,152 @@
+[
+  {
+    "id": "user_001",
+    "email": "alex.admin@honeycomb.dev",
+    "username": "alex_admin",
+    "password": "password123",
+    "bio": "Platform administrator and AI enthusiast. Building the future of development.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=alex_admin",
+    "role": "admin",
+    "following": ["user_003", "user_004", "user_006", "user_008"]
+  },
+  {
+    "id": "user_002",
+    "email": "sarah.admin@honeycomb.dev",
+    "username": "sarah_admin",
+    "password": "password123",
+    "bio": "DevOps lead turned AI advocate. Automating everything.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=sarah_admin",
+    "role": "admin",
+    "following": ["user_001", "user_005", "user_007"]
+  },
+  {
+    "id": "user_003",
+    "email": "mike.editor@honeycomb.dev",
+    "username": "mike_editor",
+    "password": "password123",
+    "bio": "Senior developer and content curator. TypeScript enthusiast.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=mike_editor",
+    "role": "editor",
+    "following": ["user_001", "user_002", "user_006"]
+  },
+  {
+    "id": "user_004",
+    "email": "emma.editor@honeycomb.dev",
+    "username": "emma_editor",
+    "password": "password123",
+    "bio": "Full-stack developer passionate about clean code and AI tools.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=emma_editor",
+    "role": "editor",
+    "following": ["user_001", "user_003", "user_008", "user_009"]
+  },
+  {
+    "id": "user_005",
+    "email": "david.editor@honeycomb.dev",
+    "username": "david_editor",
+    "password": "password123",
+    "bio": "Backend architect. Python and Node.js. AI-first development.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=david_editor",
+    "role": "editor",
+    "following": ["user_002", "user_007", "user_010"]
+  },
+  {
+    "id": "user_006",
+    "email": "lisa.author@honeycomb.dev",
+    "username": "lisa_writes",
+    "password": "password123",
+    "bio": "Frontend developer sharing Angular and React insights. Claude Code daily user.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=lisa_writes",
+    "role": "author",
+    "following": ["user_001", "user_003", "user_004", "user_007"]
+  },
+  {
+    "id": "user_007",
+    "email": "james.author@honeycomb.dev",
+    "username": "james_codes",
+    "password": "password123",
+    "bio": "QA engineer turned developer. Testing automation with AI.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=james_codes",
+    "role": "author",
+    "following": ["user_002", "user_005", "user_008"]
+  },
+  {
+    "id": "user_008",
+    "email": "anna.author@honeycomb.dev",
+    "username": "anna_dev",
+    "password": "password123",
+    "bio": "Data engineer exploring AI/ML integration. Python advocate.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=anna_dev",
+    "role": "author",
+    "following": ["user_001", "user_004", "user_009", "user_010"]
+  },
+  {
+    "id": "user_009",
+    "email": "tom.author@honeycomb.dev",
+    "username": "tom_builder",
+    "password": "password123",
+    "bio": "Tech lead building developer productivity tools. MCP enthusiast.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=tom_builder",
+    "role": "author",
+    "following": ["user_004", "user_006", "user_011"]
+  },
+  {
+    "id": "user_010",
+    "email": "nina.author@honeycomb.dev",
+    "username": "nina_tech",
+    "password": "password123",
+    "bio": "DevOps engineer. Infrastructure as code. AI-assisted workflows.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=nina_tech",
+    "role": "author",
+    "following": ["user_002", "user_005", "user_008"]
+  },
+  {
+    "id": "user_011",
+    "email": "chris.reader@honeycomb.dev",
+    "username": "chris_learns",
+    "password": "password123",
+    "bio": "Junior developer learning the ropes. AI tools are my secret weapon.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=chris_learns",
+    "role": "reader",
+    "following": ["user_001", "user_006", "user_009"]
+  },
+  {
+    "id": "user_012",
+    "email": "maya.reader@honeycomb.dev",
+    "username": "maya_curious",
+    "password": "password123",
+    "bio": "Product manager interested in AI development tools.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=maya_curious",
+    "role": "reader",
+    "following": ["user_003", "user_004"]
+  },
+  {
+    "id": "user_013",
+    "email": "ryan.reader@honeycomb.dev",
+    "username": "ryan_newdev",
+    "password": "password123",
+    "bio": "Bootcamp graduate exploring modern development practices.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=ryan_newdev",
+    "role": "reader",
+    "following": ["user_006", "user_007", "user_008"]
+  },
+  {
+    "id": "user_014",
+    "email": "zoe.reader@honeycomb.dev",
+    "username": "zoe_explorer",
+    "password": "password123",
+    "bio": "QA analyst learning about AI-assisted testing.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=zoe_explorer",
+    "role": "reader",
+    "following": ["user_007", "user_010"]
+  },
+  {
+    "id": "user_015",
+    "email": "oliver.reader@honeycomb.dev",
+    "username": "oliver_watches",
+    "password": "password123",
+    "bio": "Intern soaking up knowledge about AI development tools.",
+    "image": "https://api.dicebear.com/7.x/avatars/svg?seed=oliver_watches",
+    "role": "reader",
+    "following": ["user_001", "user_002", "user_003", "user_004", "user_005"]
+  }
+]

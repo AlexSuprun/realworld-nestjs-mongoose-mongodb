@@ -1,0 +1,737 @@
+[
+  {
+    "id": "comment_001",
+    "body": "This was exactly what I needed to get started! The installation steps were clear and I was up and running in 5 minutes.",
+    "authorId": "user_011",
+    "articleId": "article_001",
+    "createdAt": "2024-11-15T10:30:00Z"
+  },
+  {
+    "id": "comment_002",
+    "body": "Great introduction! One question - does Claude Code work offline or does it require internet connection?",
+    "authorId": "user_013",
+    "articleId": "article_001",
+    "createdAt": "2024-11-15T11:15:00Z"
+  },
+  {
+    "id": "comment_003",
+    "body": "I've been using Copilot but this looks more powerful for complex tasks. Going to try it today.",
+    "authorId": "user_012",
+    "articleId": "article_001",
+    "createdAt": "2024-11-15T14:00:00Z"
+  },
+  {
+    "id": "comment_004",
+    "body": "The CLAUDE.md tip is gold! I didn't realize how important project context was.",
+    "authorId": "user_014",
+    "articleId": "article_001",
+    "createdAt": "2024-11-16T09:00:00Z"
+  },
+  {
+    "id": "comment_005",
+    "body": "Thanks for the tutorial. Shared this with my team.",
+    "authorId": "user_015",
+    "articleId": "article_001",
+    "createdAt": "2024-11-17T16:30:00Z"
+  },
+  {
+    "id": "comment_006",
+    "body": "The prompting examples are incredibly helpful. I was definitely in the 'vague prompt' category before reading this.",
+    "authorId": "user_006",
+    "articleId": "article_002",
+    "createdAt": "2024-11-18T16:00:00Z"
+  },
+  {
+    "id": "comment_007",
+    "body": "Chain of thought prompting has changed my debugging sessions completely. Great tip!",
+    "authorId": "user_008",
+    "articleId": "article_002",
+    "createdAt": "2024-11-19T10:30:00Z"
+  },
+  {
+    "id": "comment_008",
+    "body": "Could you share more examples of negative prompting? I find that technique really useful.",
+    "authorId": "user_011",
+    "articleId": "article_002",
+    "createdAt": "2024-11-19T14:45:00Z"
+  },
+  {
+    "id": "comment_009",
+    "body": "I printed out the 'Good Prompt' example and stuck it on my monitor. Reminder to be specific!",
+    "authorId": "user_013",
+    "articleId": "article_002",
+    "createdAt": "2024-11-20T08:15:00Z"
+  },
+  {
+    "id": "comment_010",
+    "body": "MCP is a game changer. Being able to query my database directly while Claude helps with code is amazing.",
+    "authorId": "user_005",
+    "articleId": "article_003",
+    "createdAt": "2024-11-20T12:00:00Z"
+  },
+  {
+    "id": "comment_011",
+    "body": "Is there a list of all available MCP servers somewhere? Would love to explore more options.",
+    "authorId": "user_009",
+    "articleId": "article_003",
+    "createdAt": "2024-11-21T09:30:00Z"
+  },
+  {
+    "id": "comment_012",
+    "body": "The read-only tip for production databases is crucial. Almost made that mistake!",
+    "authorId": "user_010",
+    "articleId": "article_003",
+    "createdAt": "2024-11-21T15:00:00Z"
+  },
+  {
+    "id": "comment_013",
+    "body": "We've integrated AI review into our PR process. Review times dropped by 50%.",
+    "authorId": "user_001",
+    "articleId": "article_004",
+    "createdAt": "2024-11-22T14:00:00Z"
+  },
+  {
+    "id": "comment_014",
+    "body": "I was skeptical about AI code review but it catches things I miss when I'm tired. Now I use it for every PR.",
+    "authorId": "user_007",
+    "articleId": "article_004",
+    "createdAt": "2024-11-23T10:45:00Z"
+  },
+  {
+    "id": "comment_015",
+    "body": "The 'AI for first pass, humans for final say' approach makes so much sense.",
+    "authorId": "user_004",
+    "articleId": "article_004",
+    "createdAt": "2024-11-23T16:30:00Z"
+  },
+  {
+    "id": "comment_016",
+    "body": "I used to spend 10 minutes writing commit messages. Now it takes 10 seconds.",
+    "authorId": "user_011",
+    "articleId": "article_005",
+    "createdAt": "2024-11-25T11:00:00Z"
+  },
+  {
+    "id": "comment_017",
+    "body": "The conventional commits format is enforced automatically. My git history has never looked cleaner.",
+    "authorId": "user_006",
+    "articleId": "article_005",
+    "createdAt": "2024-11-26T09:15:00Z"
+  },
+  {
+    "id": "comment_018",
+    "body": "PR generation is my favorite feature. It even suggests reviewers based on the code touched!",
+    "authorId": "user_008",
+    "articleId": "article_005",
+    "createdAt": "2024-11-26T14:30:00Z"
+  },
+  {
+    "id": "comment_019",
+    "body": "Understanding context windows helped me work with our large monorepo effectively. Great explanation!",
+    "authorId": "user_003",
+    "articleId": "article_006",
+    "createdAt": "2024-11-27T17:00:00Z"
+  },
+  {
+    "id": "comment_020",
+    "body": "The tip about focused sessions vs trying to do everything at once was exactly what I needed to hear.",
+    "authorId": "user_009",
+    "articleId": "article_006",
+    "createdAt": "2024-11-28T10:00:00Z"
+  },
+  {
+    "id": "comment_021",
+    "body": "Finally an honest comparison! I use both Claude Code and Copilot together and they complement each other well.",
+    "authorId": "user_005",
+    "articleId": "article_007",
+    "createdAt": "2024-11-28T15:00:00Z"
+  },
+  {
+    "id": "comment_022",
+    "body": "I switched from Cursor after reading this. No regrets - the multi-file editing is superior.",
+    "authorId": "user_012",
+    "articleId": "article_007",
+    "createdAt": "2024-11-29T09:30:00Z"
+  },
+  {
+    "id": "comment_023",
+    "body": "Good point about them not being mutually exclusive. Using the right tool for the right job.",
+    "authorId": "user_013",
+    "articleId": "article_007",
+    "createdAt": "2024-11-29T14:00:00Z"
+  },
+  {
+    "id": "comment_024",
+    "body": "Our team has built 20+ custom commands now. Total game changer for consistency.",
+    "authorId": "user_001",
+    "articleId": "article_008",
+    "createdAt": "2024-11-30T12:00:00Z"
+  },
+  {
+    "id": "comment_025",
+    "body": "The $ARGUMENTS feature is brilliant. Makes commands so flexible.",
+    "authorId": "user_006",
+    "articleId": "article_008",
+    "createdAt": "2024-12-01T09:00:00Z"
+  },
+  {
+    "id": "comment_026",
+    "body": "Sharing commands via git is perfect. New team members get all our workflows automatically.",
+    "authorId": "user_010",
+    "articleId": "article_008",
+    "createdAt": "2024-12-01T11:30:00Z"
+  },
+  {
+    "id": "comment_027",
+    "body": "The 'test the behavior not implementation' advice fixed my AI-generated tests completely.",
+    "authorId": "user_007",
+    "articleId": "article_009",
+    "createdAt": "2024-12-01T16:00:00Z"
+  },
+  {
+    "id": "comment_028",
+    "body": "60-80% useful after refinement sounds about right. Still a massive time saver.",
+    "authorId": "user_008",
+    "articleId": "article_009",
+    "createdAt": "2024-12-02T10:00:00Z"
+  },
+  {
+    "id": "comment_029",
+    "body": "TDD with AI is exactly how I work now. Write failing test, let Claude fix it.",
+    "authorId": "user_014",
+    "articleId": "article_009",
+    "createdAt": "2024-12-02T14:30:00Z"
+  },
+  {
+    "id": "comment_030",
+    "body": "The debugging workflow with MCP integration is powerful. Found a prod issue in 5 minutes.",
+    "authorId": "user_003",
+    "articleId": "article_010",
+    "createdAt": "2024-12-03T13:00:00Z"
+  },
+  {
+    "id": "comment_031",
+    "body": "Including full error messages makes such a difference. Claude can actually help when it has context.",
+    "authorId": "user_011",
+    "articleId": "article_010",
+    "createdAt": "2024-12-04T09:00:00Z"
+  },
+  {
+    "id": "comment_032",
+    "body": "I always start complex tasks in Plan Mode now. Saves so much time.",
+    "authorId": "user_008",
+    "articleId": "article_011",
+    "createdAt": "2024-12-04T16:30:00Z"
+  },
+  {
+    "id": "comment_033",
+    "body": "The 'explore then execute' workflow makes total sense. Wish I'd learned this earlier.",
+    "authorId": "user_009",
+    "articleId": "article_011",
+    "createdAt": "2024-12-05T08:00:00Z"
+  },
+  {
+    "id": "comment_034",
+    "body": "Our CLAUDE.md went from empty to 200 lines. Project context is everything.",
+    "authorId": "user_001",
+    "articleId": "article_012",
+    "createdAt": "2024-12-05T10:30:00Z"
+  },
+  {
+    "id": "comment_035",
+    "body": "The memory hierarchy explanation cleared up my confusion. Great article!",
+    "authorId": "user_006",
+    "articleId": "article_012",
+    "createdAt": "2024-12-05T15:00:00Z"
+  },
+  {
+    "id": "comment_036",
+    "body": "Running /init on joining a project is now my first step. Essential.",
+    "authorId": "user_015",
+    "articleId": "article_012",
+    "createdAt": "2024-12-06T09:00:00Z"
+  },
+  {
+    "id": "comment_037",
+    "body": "We have a legacy module nobody understood. AI helped us document and modernize it safely.",
+    "authorId": "user_005",
+    "articleId": "article_013",
+    "createdAt": "2024-12-06T15:00:00Z"
+  },
+  {
+    "id": "comment_038",
+    "body": "The characterization tests tip is gold. Capture current behavior before changing anything.",
+    "authorId": "user_010",
+    "articleId": "article_013",
+    "createdAt": "2024-12-07T09:30:00Z"
+  },
+  {
+    "id": "comment_039",
+    "body": "Finding orphaned data with MongoDB MCP saved us from a production bug. Amazing!",
+    "authorId": "user_005",
+    "articleId": "article_014",
+    "createdAt": "2024-12-07T12:00:00Z"
+  },
+  {
+    "id": "comment_040",
+    "body": "The read-only connection warning needs to be in bold. So important!",
+    "authorId": "user_010",
+    "articleId": "article_014",
+    "createdAt": "2024-12-08T09:00:00Z"
+  },
+  {
+    "id": "comment_041",
+    "body": "Generated docs are 80% there. Quick edits and they're production ready.",
+    "authorId": "user_004",
+    "articleId": "article_015",
+    "createdAt": "2024-12-08T15:30:00Z"
+  },
+  {
+    "id": "comment_042",
+    "body": "The auto-generated changelog from PR changes is brilliant. Never thought of that.",
+    "authorId": "user_012",
+    "articleId": "article_015",
+    "createdAt": "2024-12-09T09:00:00Z"
+  },
+  {
+    "id": "comment_043",
+    "body": "Understanding the difference between Commands, Skills, and SubAgents finally clicked. Great explanation!",
+    "authorId": "user_008",
+    "articleId": "article_016",
+    "createdAt": "2024-12-09T13:00:00Z"
+  },
+  {
+    "id": "comment_044",
+    "body": "The Plan SubAgent is incredibly powerful for large features. Use it every day.",
+    "authorId": "user_004",
+    "articleId": "article_016",
+    "createdAt": "2024-12-10T08:00:00Z"
+  },
+  {
+    "id": "comment_045",
+    "body": "Used this guide to roll out Claude Code to our 20-person team. Went smoothly!",
+    "authorId": "user_005",
+    "articleId": "article_017",
+    "createdAt": "2024-12-10T11:00:00Z"
+  },
+  {
+    "id": "comment_046",
+    "body": "The 'addressing concerns' table is perfect for convincing skeptical managers.",
+    "authorId": "user_003",
+    "articleId": "article_017",
+    "createdAt": "2024-12-10T15:30:00Z"
+  },
+  {
+    "id": "comment_047",
+    "body": "We added AI review as a non-blocking CI step. Great suggestion!",
+    "authorId": "user_005",
+    "articleId": "article_018",
+    "createdAt": "2024-12-11T15:00:00Z"
+  },
+  {
+    "id": "comment_048",
+    "body": "Rate limits are real. Had to implement caching for CI usage.",
+    "authorId": "user_007",
+    "articleId": "article_018",
+    "createdAt": "2024-12-12T09:00:00Z"
+  },
+  {
+    "id": "comment_049",
+    "body": "The 'what edge cases might cause issues' prompt found 3 bugs in my code. Wow.",
+    "authorId": "user_007",
+    "articleId": "article_019",
+    "createdAt": "2024-12-12T12:30:00Z"
+  },
+  {
+    "id": "comment_050",
+    "body": "Defensive programming tips are excellent. My error handling improved significantly.",
+    "authorId": "user_008",
+    "articleId": "article_019",
+    "createdAt": "2024-12-12T16:00:00Z"
+  },
+  {
+    "id": "comment_051",
+    "body": "Love the honest journey perspective. Week 3 is where it really clicked for me too.",
+    "authorId": "user_013",
+    "articleId": "article_020",
+    "createdAt": "2024-12-13T17:30:00Z"
+  },
+  {
+    "id": "comment_052",
+    "body": "Your 'mind blown' moment with the multi-file editing was exactly my experience!",
+    "authorId": "user_014",
+    "articleId": "article_020",
+    "createdAt": "2024-12-14T09:00:00Z"
+  },
+  {
+    "id": "comment_053",
+    "body": "Shared this with my team's skeptics. Real experiences help more than marketing.",
+    "authorId": "user_015",
+    "articleId": "article_020",
+    "createdAt": "2024-12-14T10:30:00Z"
+  },
+  {
+    "id": "comment_054",
+    "body": "TypeScript really does make AI assistance better. Types give so much context.",
+    "authorId": "user_004",
+    "articleId": "article_021",
+    "createdAt": "2024-12-14T13:00:00Z"
+  },
+  {
+    "id": "comment_055",
+    "body": "The type error fixing workflow is my favorite. Claude understands the type system perfectly.",
+    "authorId": "user_009",
+    "articleId": "article_021",
+    "createdAt": "2024-12-15T08:00:00Z"
+  },
+  {
+    "id": "comment_056",
+    "body": "Security section should be mandatory reading. Almost shared API keys in a prompt once.",
+    "authorId": "user_005",
+    "articleId": "article_022",
+    "createdAt": "2024-12-15T11:00:00Z"
+  },
+  {
+    "id": "comment_057",
+    "body": "The emergency response section is crucial. Rotate keys immediately if exposed!",
+    "authorId": "user_010",
+    "articleId": "article_022",
+    "createdAt": "2024-12-15T14:00:00Z"
+  },
+  {
+    "id": "comment_058",
+    "body": "Shared with our security team. They added this to our onboarding docs.",
+    "authorId": "user_003",
+    "articleId": "article_022",
+    "createdAt": "2024-12-16T09:00:00Z"
+  },
+  {
+    "id": "comment_059",
+    "body": "Explore agent was perfect for onboarding to a new project. Understood the codebase in an hour.",
+    "authorId": "user_013",
+    "articleId": "article_023",
+    "createdAt": "2024-12-16T16:00:00Z"
+  },
+  {
+    "id": "comment_060",
+    "body": "The tracing flows prompt is exactly what I needed. Understanding request paths is much easier now.",
+    "authorId": "user_015",
+    "articleId": "article_023",
+    "createdAt": "2024-12-17T08:00:00Z"
+  },
+  {
+    "id": "comment_061",
+    "body": "I use both Cursor and Claude Code now. Best of both worlds.",
+    "authorId": "user_012",
+    "articleId": "article_024",
+    "createdAt": "2024-12-17T12:00:00Z"
+  },
+  {
+    "id": "comment_062",
+    "body": "The comparison table is super helpful. Finally understand where each tool shines.",
+    "authorId": "user_013",
+    "articleId": "article_024",
+    "createdAt": "2024-12-17T15:00:00Z"
+  },
+  {
+    "id": "comment_063",
+    "body": "Real bug case studies are so valuable. This is exactly how debugging with AI works.",
+    "authorId": "user_006",
+    "articleId": "article_025",
+    "createdAt": "2024-12-18T17:00:00Z"
+  },
+  {
+    "id": "comment_064",
+    "body": "The memory leak case study saved me. Had the exact same issue!",
+    "authorId": "user_010",
+    "articleId": "article_025",
+    "createdAt": "2024-12-19T09:00:00Z"
+  },
+  {
+    "id": "comment_065",
+    "body": "15 minutes vs 2 hours for that first bug? That's the productivity gain we need to show management.",
+    "authorId": "user_014",
+    "articleId": "article_025",
+    "createdAt": "2024-12-19T10:30:00Z"
+  },
+  {
+    "id": "comment_066",
+    "body": "# syntax is such a simple but useful feature. Use it multiple times per session.",
+    "authorId": "user_006",
+    "articleId": "article_026",
+    "createdAt": "2024-12-19T14:00:00Z"
+  },
+  {
+    "id": "comment_067",
+    "body": "Quick notes for temporary context is genius. No more repeating myself.",
+    "authorId": "user_011",
+    "articleId": "article_026",
+    "createdAt": "2024-12-20T08:00:00Z"
+  },
+  {
+    "id": "comment_068",
+    "body": "Python tips are just as relevant as the TypeScript ones. Great cross-language advice.",
+    "authorId": "user_005",
+    "articleId": "article_027",
+    "createdAt": "2024-12-20T11:00:00Z"
+  },
+  {
+    "id": "comment_069",
+    "body": "The FastAPI examples are perfect. Exact patterns I use daily.",
+    "authorId": "user_010",
+    "articleId": "article_027",
+    "createdAt": "2024-12-20T14:00:00Z"
+  },
+  {
+    "id": "comment_070",
+    "body": "NestJS patterns article is exactly what I needed. Claude generates perfect module structures now.",
+    "authorId": "user_003",
+    "articleId": "article_028",
+    "createdAt": "2024-12-21T16:00:00Z"
+  },
+  {
+    "id": "comment_071",
+    "body": "Guards and decorators generation is flawless when you reference existing patterns.",
+    "authorId": "user_006",
+    "articleId": "article_028",
+    "createdAt": "2024-12-22T09:00:00Z"
+  },
+  {
+    "id": "comment_072",
+    "body": "Context7 for NestJS documentation is amazing. Real-time docs lookup while coding!",
+    "authorId": "user_009",
+    "articleId": "article_029",
+    "createdAt": "2024-12-22T13:00:00Z"
+  },
+  {
+    "id": "comment_073",
+    "body": "Didn't know about all the available documentation. Going to explore more.",
+    "authorId": "user_011",
+    "articleId": "article_029",
+    "createdAt": "2024-12-23T08:00:00Z"
+  },
+  {
+    "id": "comment_074",
+    "body": "Mode comparison table is bookmarked. Reference it constantly.",
+    "authorId": "user_012",
+    "articleId": "article_030",
+    "createdAt": "2024-12-23T11:00:00Z"
+  },
+  {
+    "id": "comment_075",
+    "body": "Plan Mode first, then decide on edit mode. Perfect workflow.",
+    "authorId": "user_013",
+    "articleId": "article_030",
+    "createdAt": "2024-12-23T14:00:00Z"
+  },
+  {
+    "id": "comment_076",
+    "body": "Auto-edit mode is scary but so fast. Use it for low-risk changes.",
+    "authorId": "user_014",
+    "articleId": "article_030",
+    "createdAt": "2024-12-24T08:00:00Z"
+  },
+  {
+    "id": "comment_077",
+    "body": "Angular tips are spot on! The RxJS refactoring prompts are exactly right.",
+    "authorId": "user_004",
+    "articleId": "article_031",
+    "createdAt": "2024-12-24T12:00:00Z"
+  },
+  {
+    "id": "comment_078",
+    "body": "NgRx state management generation is incredible. Boilerplate in seconds.",
+    "authorId": "user_012",
+    "articleId": "article_031",
+    "createdAt": "2024-12-24T15:00:00Z"
+  },
+  {
+    "id": "comment_079",
+    "body": "Ethics discussion is important. We need more content like this in the AI space.",
+    "authorId": "user_001",
+    "articleId": "article_032",
+    "createdAt": "2024-12-25T10:30:00Z"
+  },
+  {
+    "id": "comment_080",
+    "body": "The 'AI augments, doesn't replace' message needs to be repeated more often.",
+    "authorId": "user_009",
+    "articleId": "article_032",
+    "createdAt": "2024-12-25T14:00:00Z"
+  },
+  {
+    "id": "comment_081",
+    "body": "Transparency with team is key. We all know who uses AI and share techniques.",
+    "authorId": "user_010",
+    "articleId": "article_032",
+    "createdAt": "2024-12-26T09:00:00Z"
+  },
+  {
+    "id": "comment_082",
+    "body": "Speed optimization tips made my AI sessions 3x faster. Especially batch related tasks!",
+    "authorId": "user_006",
+    "articleId": "article_033",
+    "createdAt": "2024-12-26T16:00:00Z"
+  },
+  {
+    "id": "comment_083",
+    "body": "Keyboard shortcuts list is printed on my desk. Muscle memory developing!",
+    "authorId": "user_011",
+    "articleId": "article_033",
+    "createdAt": "2024-12-27T08:00:00Z"
+  },
+  {
+    "id": "comment_084",
+    "body": "I made almost every mistake on this list when I started. Great learning resource!",
+    "authorId": "user_014",
+    "articleId": "article_034",
+    "createdAt": "2024-12-27T12:00:00Z"
+  },
+  {
+    "id": "comment_085",
+    "body": "Blind trust was my biggest mistake. Now I review everything, even if it looks right.",
+    "authorId": "user_015",
+    "articleId": "article_034",
+    "createdAt": "2024-12-27T15:00:00Z"
+  },
+  {
+    "id": "comment_086",
+    "body": "Fear of experimentation held me back. Branches make it safe to push limits.",
+    "authorId": "user_013",
+    "articleId": "article_034",
+    "createdAt": "2024-12-28T09:00:00Z"
+  },
+  {
+    "id": "comment_087",
+    "body": "Personal workflow article resonated with me. Everyone finds their own style.",
+    "authorId": "user_009",
+    "articleId": "article_035",
+    "createdAt": "2024-12-28T17:00:00Z"
+  },
+  {
+    "id": "comment_088",
+    "body": "The Speed Runner workflow is me! Auto-edit for everything trusted.",
+    "authorId": "user_011",
+    "articleId": "article_035",
+    "createdAt": "2024-12-29T08:00:00Z"
+  },
+  {
+    "id": "comment_089",
+    "body": "QA perspective on AI is valuable. Test generation has improved our coverage significantly.",
+    "authorId": "user_010",
+    "articleId": "article_036",
+    "createdAt": "2024-12-29T13:00:00Z"
+  },
+  {
+    "id": "comment_090",
+    "body": "Bug analysis prompts are perfect. Our bug reports are more structured now.",
+    "authorId": "user_014",
+    "articleId": "article_036",
+    "createdAt": "2024-12-29T16:00:00Z"
+  },
+  {
+    "id": "comment_091",
+    "body": "Technical debt management with AI is underrated. This approach really works.",
+    "authorId": "user_003",
+    "articleId": "article_037",
+    "createdAt": "2024-12-30T11:00:00Z"
+  },
+  {
+    "id": "comment_092",
+    "body": "The debt log in CLAUDE.md is brilliant. Visible and trackable.",
+    "authorId": "user_010",
+    "articleId": "article_037",
+    "createdAt": "2024-12-30T14:00:00Z"
+  },
+  {
+    "id": "comment_093",
+    "body": "Pair programming with AI is my new normal. Always have a partner now.",
+    "authorId": "user_008",
+    "articleId": "article_038",
+    "createdAt": "2024-12-31T16:00:00Z"
+  },
+  {
+    "id": "comment_094",
+    "body": "The human advantage section is important. We bring things AI can't.",
+    "authorId": "user_011",
+    "articleId": "article_038",
+    "createdAt": "2025-01-01T08:00:00Z"
+  },
+  {
+    "id": "comment_095",
+    "body": "Rubber duck + expert is the perfect description. AI listens AND responds helpfully.",
+    "authorId": "user_013",
+    "articleId": "article_038",
+    "createdAt": "2025-01-01T09:30:00Z"
+  },
+  {
+    "id": "comment_096",
+    "body": "DevOps integration examples are exactly what I needed. Terraform generation is amazing.",
+    "authorId": "user_005",
+    "articleId": "article_039",
+    "createdAt": "2025-01-01T12:00:00Z"
+  },
+  {
+    "id": "comment_097",
+    "body": "The K8s manifests generation saved me hours. Perfect structure every time.",
+    "authorId": "user_009",
+    "articleId": "article_039",
+    "createdAt": "2025-01-01T15:00:00Z"
+  },
+  {
+    "id": "comment_098",
+    "body": "Troubleshooting with Datadog MCP is the dream. Context from monitoring while coding.",
+    "authorId": "user_002",
+    "articleId": "article_039",
+    "createdAt": "2025-01-02T08:00:00Z"
+  },
+  {
+    "id": "comment_099",
+    "body": "Great vision for the future! Excited about what's coming.",
+    "authorId": "user_003",
+    "articleId": "article_040",
+    "createdAt": "2025-01-02T10:00:00Z"
+  },
+  {
+    "id": "comment_100",
+    "body": "The 'what won't change' section is reassuring. Human skills remain essential.",
+    "authorId": "user_007",
+    "articleId": "article_040",
+    "createdAt": "2025-01-02T11:30:00Z"
+  },
+  {
+    "id": "comment_101",
+    "body": "Preparing now for the future of AI development. Great roadmap!",
+    "authorId": "user_006",
+    "articleId": "article_040",
+    "createdAt": "2025-01-02T13:00:00Z"
+  },
+  {
+    "id": "comment_102",
+    "body": "The best code will be written by humans and AI together. Perfect closing thought.",
+    "authorId": "user_004",
+    "articleId": "article_040",
+    "createdAt": "2025-01-02T14:30:00Z"
+  },
+  {
+    "id": "comment_103",
+    "body": "Just started using Claude Code yesterday. This article series is exactly what I needed.",
+    "authorId": "user_015",
+    "articleId": "article_001",
+    "createdAt": "2025-01-02T15:00:00Z"
+  },
+  {
+    "id": "comment_104",
+    "body": "Coming back to this article after a month of use. The advice holds up perfectly.",
+    "authorId": "user_011",
+    "articleId": "article_002",
+    "createdAt": "2025-01-02T15:30:00Z"
+  },
+  {
+    "id": "comment_105",
+    "body": "We've built 5 custom MCPs now. The extensibility is incredible.",
+    "authorId": "user_009",
+    "articleId": "article_003",
+    "createdAt": "2025-01-02T16:00:00Z"
+  }
+]
